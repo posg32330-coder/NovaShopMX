@@ -546,6 +546,40 @@
     }
 
     /* ==========================================================================
+       NUEVA SECCIÓN: CÓMO COMPRAR
+       ========================================================================== */
+    .buy-notice-box {
+      margin-top: 2.5rem;
+      padding: 1.5rem;
+      border: 1px solid var(--border-color);
+      background-color: var(--card-bg);
+      text-align: center;
+    }
+
+    .buy-notice-text {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.5;
+      margin-bottom: 1.5rem;
+    }
+
+    .buy-fallback-text {
+      margin-top: 1rem;
+      font-size: 0.875rem;
+      color: var(--text-muted);
+    }
+
+    .buy-fallback-text a {
+      color: var(--text-color);
+      text-decoration: underline;
+      transition: color var(--transition-fast);
+    }
+
+    .buy-fallback-text a:hover {
+      color: var(--accent-color);
+    }
+
+    /* ==========================================================================
        7. SECCIÓN CONTACTO / COMUNIDAD
        ========================================================================== */
     .contact-wrapper {
@@ -619,31 +653,31 @@
     }
 
     /* ==========================================================================
-       9. BOTÓN FLOTANTE DE WHATSAPP
+       9. BOTÓN FLOTANTE DE FACEBOOK
        ========================================================================== */
-    .whatsapp-float {
+    .facebook-float {
       position: fixed;
       bottom: 2rem;
       right: 2rem;
       width: 56px;
       height: 56px;
-      background-color: #25D366;
+      background-color: #1877F2;
       color: #FFFFFF;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3);
+      box-shadow: 0 10px 25px rgba(24, 119, 242, 0.3);
       z-index: 999;
       transition: transform var(--transition-fast), box-shadow var(--transition-fast);
     }
 
-    .whatsapp-float:hover {
+    .facebook-float:hover {
       transform: scale(1.1);
-      box-shadow: 0 15px 30px rgba(37, 211, 102, 0.5);
+      box-shadow: 0 15px 30px rgba(24, 119, 242, 0.5);
     }
 
-    .whatsapp-float svg {
+    .facebook-float svg {
       width: 28px;
       height: 28px;
       fill: currentColor;
@@ -712,6 +746,7 @@
         <ul class="nav-links" id="navLinks">
           <li><a href="#coleccion" class="nav-link">Colección</a></li>
           <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+          <li><a href="#como-comprar" class="nav-link">Cómo comprar</a></li>
           <li><a href="#contacto" class="nav-link">Contacto</a></li>
         </ul>
       </nav>
@@ -863,8 +898,46 @@
           <div class="benefit-card fade-in">
             <span class="benefit-num">03</span>
             <h3 class="benefit-title">RESPUESTAS RÁPIDAS</h3>
-            <p class="benefit-desc">Resolvemos tus dudas de tallas, disponibilidad o envíos por mensaje en nuestra página de Facebook.</p>
+            <p class="benefit-desc">Resolvemos tus dudas de tallas, disponibilidad, envíos y pagos por Messenger en nuestra página de Facebook.</p>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       SECCIÓN: CÓMO COMPRAR
+       ========================================================================== -->
+    <section id="como-comprar" class="section-padding" style="border-top: 1px solid var(--border-color);">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-number">04 / CÓMO COMPRAR</span>
+          <h2 class="section-title">PASO A PASO PARA PEDIR TU PRENDA</h2>
+        </div>
+
+        <div class="benefits-grid">
+          <div class="benefit-card fade-in">
+            <span class="benefit-num">01</span>
+            <h3 class="benefit-title">ELIGE TU PRENDA</h3>
+            <p class="benefit-desc">Mira las prendas en nuestras redes y elige la que te guste.</p>
+          </div>
+
+          <div class="benefit-card fade-in">
+            <span class="benefit-num">02</span>
+            <h3 class="benefit-title">ESCRÍBENOS POR MESSENGER</h3>
+            <p class="benefit-desc">Mándanos mensaje a nuestra página de Facebook con la prenda y tu talla. Confirmamos disponibilidad al momento.</p>
+          </div>
+
+          <div class="benefit-card fade-in">
+            <span class="benefit-num">03</span>
+            <h3 class="benefit-title">PAGA Y RECIBE</h3>
+            <p class="benefit-desc">Por el mismo chat te damos los datos de pago. Cuando se confirma, enviamos tu pedido y te pasamos tu número de guía.</p>
+          </div>
+        </div>
+
+        <div class="buy-notice-box fade-in">
+          <p class="buy-notice-text">Todas las ventas y pagos se coordinan únicamente por Messenger de nuestra página oficial de Facebook. No pedimos pagos por otros medios ni por mensajes de números desconocidos.</p>
+          <a href="https://m.me/61595499184621" target="_blank" rel="noopener" class="btn btn-primary">Escríbenos por Messenger</a>
+          <p class="buy-fallback-text">¿No te abre el chat? Entra a nuestra <a href="https://www.facebook.com/profile.php?id=61595499184621" target="_blank" rel="noopener">página de Facebook</a> y toca «Enviar mensaje».</p>
         </div>
       </div>
     </section>
@@ -876,7 +949,7 @@
       <div class="container">
         <div class="contact-wrapper fade-in">
           <div class="section-header">
-            <span class="section-number">04 / COMUNIDAD</span>
+            <span class="section-number">05 / COMUNIDAD</span>
             <h2 class="section-title">SÍGUENOS Y CONTÁCTANOS</h2>
             <p style="color: var(--text-muted);">Mira las prendas nuevas, avisos de llegada y novedades en nuestras redes.</p>
           </div>
@@ -884,6 +957,9 @@
           <div class="social-links">
             <a href="https://www.tiktok.com/@nova_shop030" target="_blank" rel="noopener" class="social-btn">
               TikTok <span></span>
+            </a>
+            <a href="https://m.me/61595499184621" target="_blank" rel="noopener" class="social-btn">
+              Messenger <span></span>
             </a>
             <a href="https://www.facebook.com/profile.php?id=61595499184621" target="_blank" rel="noopener" class="social-btn">
               Facebook <span></span>
@@ -914,11 +990,11 @@
   </footer>
 
   <!-- ==========================================================================
-     9. BOTÓN FLOTANTE DE WHATSAPP
+     9. BOTÓN FLOTANTE DE FACEBOOK
      ========================================================================== -->
-  <a href="https://whatsapp.com/channel/0029VbEBFXPAe5VoCYl5cX28" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Unirme al canal de WhatsApp">
+  <a href="https://www.facebook.com/profile.php?id=61595499184621" target="_blank" rel="noopener" class="facebook-float" aria-label="Visita nuestra página de Facebook">
     <svg viewBox="0 0 24 24">
-      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.572-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+      <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
     </svg>
   </a>
 
@@ -1010,9 +1086,11 @@ GUÍA DE CONFIGURACIÓN Y PERSONALIZACIÓN DE NOVA SHOP:
    En la sección <script>, modifica la fecha fija en la variable `targetDate`.
    Ejemplo: const targetDate = new Date('2026-11-15T12:00:00');
 
-2. ENLACES A REDES SOCIALES Y CANAL DE WHATSAPP:
+2. ENLACES A REDES SOCIALES, MESSENGER Y CANAL DE WHATSAPP:
    - TikTok: https://www.tiktok.com/@nova_shop030
-   - Facebook: https://www.facebook.com/profile.php?id=61595499184621
+   - Página de Facebook: https://www.facebook.com/profile.php?id=61595499184621
+   - Messenger (atención directa, ventas, coordinación de pedidos y pagos):
+     https://m.me/61595499184621
    - Canal de WhatsApp (difusión de novedades y avisos de lanzamientos):
      https://whatsapp.com/channel/0029VbEBFXPAe5VoCYl5cX28
 
